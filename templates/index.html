@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% block content %}
 <html lang="en">
 
 <head>
@@ -86,21 +87,21 @@
 
   <div class="slideshow">
       <div class="slideshow-item">
-          <img src={% static 'images/company.png' %} alt="">
+          <img src="{% static 'images/company.png' %}" alt="">
           <div class="slideshow-item-text">
               <h5>GOOA World Freighters</h5>
               <p>About us, GOOA  WORLD  FREIGHTERS  LIMITED  is  a  private  limited  company  registered  in Kenya  Under  the  Kenya  Company  Registration  Act.  Rooted  in  the  <b>Logistics  general supplies  industry,</b>  As  one  of  the  logistics  company  in  the  region.</p>
           </div>
       </div>
       <div class="slideshow-item">
-          <img src={% static 'images/vision.jpg' %} alt="">
+          <img src="{% static 'images/vision.jpg' %}" alt="">
           <div class="slideshow-item-text">
               <h5>Our Vision </h5>
               <p>To provide excellent and quality services to the full satisfaction of our client by offer-ing best professional engineering practice and sustainable solutions.</p>
           </div>
       </div>
       <div class="slideshow-item">
-          <img src={{ url_for('static', filename="images/mission.jpg") }} alt="">
+          <img src="{% static 'images/mission.jpg' %}" alt="">
           <div class="slideshow-item-text">
               <h5>Our Mission</h5>
               <p>To  provide  the  highest  quality  of  service  to  our  clients,  ensure  long-term  profitability, increase shareholder value, provide career opportunities, and continuously support the betterment of the community.</p>
@@ -114,7 +115,7 @@
 <!--          </div>-->
 <!--      </div>-->
             <div class="slideshow-item">
-          <img src={% static 'images/strategy.jpg' %} alt="">
+          <img src="{% static 'images/strategy.jpg' %}" alt="">
           <div class="slideshow-item-text">
               <h5>Our Strategy</h5>
               <p>We  place  the  highest  value  on   teamwork  and  mutual   respect  among  our employees  and  our  clients.  Our  success  is  the  result  of  working  diligently  as  a team  to  do  each  job  right  as  well  as  maintaining  a  long-term  perspective  and integrity in the face of daily pressures while ensuring excellence and satisfaction in our product and service.</p>
@@ -151,103 +152,103 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Transport & Logistics</h5><br>
-                    <img src={% static 'images/overseas.jpg' %} alt="" >
+                    <img src="{% static 'images/overseas.jpg' %}" alt="" >
                 </div>
                 <div class="details">
                     <div class="content">
                       <p>Our main functional areas are transportation, warehousing, and distribution. We have enough fleet of trucks and equipment that are operated by highly professional persons,who are ... </p>
-                        <a href="services#transport"><h2>Read more</h2></a>
+                        <a href="{% url 'services#transport' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                 <h5>Our Services</h5><br>
-                    <img src={% static 'images/services.jpg' %} alt="">
+                    <img src="{% static 'images/services.jpg' %}" alt="">
                 </div>
                 <div class="details">
                     <div class="content">
                         <p>We offer a range of value added services, such as: <ul> <li>free consulting to clients</li><li>transportation and logistics services</li></ul></p>
-                        <a href="services#ourservices"><h2>Read more</h2></a>
+                        <a href="{% url 'services#ourservices' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>Road, ship & air Freight</h5><br>
-                    <img src={% static 'images/road.jpg' %} alt="">
+                    <img src="{% static 'images/road.jpg' %}" alt="">
                 </div>
                 <div class="details">
                     <div class="content">
                       <p><strong>Reliable</strong> and <b>time-definite door-to-door</b>road transport. Our multi-modal infrastructure, which unites all products in one warehouse and distribution center, ensures the highest possible level of efficiency.</p>
-                        <a href="services#road"><h2>Read more</h2></a>
+                        <a href="{% url 'services#road' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>Customs Clearance </h5><br>
-                    <img src={% static 'images/logistics.jpg' %} alt="">
+                    <img src="{% static 'images/logistics.jpg' %}" alt="">
                 </div>
                 <div class="details">
                     <div class="content">
                       <p> Our professional staff are skilled in customs law, regulations and procedures for all countries in East Africa. We provide consultancy services based on our experience as well continuous development and training...</p>
-                        <a href="services#customs"><h2>Read more</h2></a>
+                        <a href="{% url 'services#customs' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>General Supplies</h5><br>
-                    <img src={% static 'images/warehousing.jpg' %} alt="">
+                    <img src="{% static 'images/warehousing.jpg' %}" alt="">
                 </div>
                 <div class="details">
                     <div class="content">
                       <p>Our aim is to provide cost efficient procurement on a larger scale, straight from the source & offer supply solutions in the most demanding environments where lead times and supply locations are challenging.</p>
-                        <a href="services#supplies"><h2>Read more</h2></a>
+                        <a href="{% url 'services#supplies' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>General Office Suppliers</h5><br>
-                    <img src={% static 'images/office.jpg' %} alt="">
+                    <img src="{% static 'images/office.jpg' %}" alt="">
                 </div>
                 <div class="details">
                   <p style="color: white">We offer a wide range of Office systems and chairs that are flexible, dynamic and ergonomic. <br>Stationery Sell and Supply</p>
                     <div class="content">
-                        <a href="services#office"><h2>Read more</h2></a>
+                        <a href="{% url 'services#office' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>Printing Services</h5><br>
-                    <img src={% static 'images/printing.jpg' %} alt="">
+                    <img src="{% static 'images/printing.jpg' %}" alt="">
                 </div>
                 <div class="details">
                     <div class="content">
                       <p> This unit is involved in provision of expert computer-related services with efficiency. This is an express service where binding is done ‘As-u- wait’. Off-press binding of printed matter e.g. receipts books</p>
-                        <a href="services#printing"><h2>Read more</h2></a>
+                        <a href="{% url 'services#printing' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>Advertising and Branding</h5><br>
-                    <img src={% static 'images/advertising.jpg' %} alt="Air Freight" style="width: auto" height="40px">
+                    <img src="{% static 'images/advertising.jpg' %}" alt="Air Freight" style="width: auto" height="40px">
                 </div>
                 <div class="details">
                     <div class="content">
                       <p>Gooa World Freighters Limited’s Marketing division has qualified staff members with experience in branding and advertising, which includes Graphic design and printing</p>
-                        <a href="services#advertising"><h2>Read more</h2></a>
+                        <a href="{% url 'services#advertising' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="cat">
                   <h5>Corporate Advertising and Branding</h5><br>
-                    <img src={% static 'images/customsbrokerage.jpg' %} alt="">
+                    <img src="{% static 'images/customsbrokerage.jpg' %}" alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -259,12 +260,12 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Supply of Agricultural Products</h5><br>
-                    <img src={% static 'images/agriculture.jpg' %} alt="Air Freight">
+                    <img src="{% static 'images/agriculture.jpg' %}" alt="Air Freight">
                 </div>
                 <div class="details">
                     <div class="content">
                       <p>We deal in general supplies, distribution, wholesale and retail of all types of Agricultural products including Vegetables, Fruits and dry cereals produce such as maize, beans, wheat, soya, millet, sorghum ...</p>
-                        <a href="services#agriculture"><h2>Read more</h2></a>
+                        <a href="{% url 'services#agriculture' %}"><h2>Read more</h2></a>
                     </div>
                 </div>
             </div>
@@ -315,8 +316,9 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src={% static 'vendor/jquery/jquery.min.js' %}></script>
-  <script src={% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}></script>
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 </html>
+{% endblock %}
