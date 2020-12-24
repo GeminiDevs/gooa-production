@@ -3,5 +3,5 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('store/', views.services, name="services"),
+    path('services/', views.services, name="services"),
 ]
