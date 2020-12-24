@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -10,8 +11,8 @@
 
   <title>GOOA Company Limited</title>
 
-  <link href="{{ url_for('static', filename="vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
-  <link href={{ url_for('static', filename="css/styles.css") }} rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
 
 <!-- Add icon library -->
@@ -55,7 +56,7 @@
   <section id="header">
       <div class="menu-bar">
           <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/shipping.png') }}" class="img-responsive" alt=""></a>
+              <a class="navbar-brand" href="#"><img src="{% static 'images/shipping.png' %}" class="img-responsive" alt=""></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -85,14 +86,14 @@
 
   <div class="slideshow">
       <div class="slideshow-item">
-          <img src={{ url_for('static', filename="images/company.png") }} alt="">
+          <img src={% static 'images/company.png' %} alt="">
           <div class="slideshow-item-text">
               <h5>GOOA World Freighters</h5>
               <p>About us, GOOA  WORLD  FREIGHTERS  LIMITED  is  a  private  limited  company  registered  in Kenya  Under  the  Kenya  Company  Registration  Act.  Rooted  in  the  <b>Logistics  general supplies  industry,</b>  As  one  of  the  logistics  company  in  the  region.</p>
           </div>
       </div>
       <div class="slideshow-item">
-          <img src={{ url_for('static', filename="images/vision.jpg") }} alt="">
+          <img src={% static 'images/vision.jpg' %} alt="">
           <div class="slideshow-item-text">
               <h5>Our Vision </h5>
               <p>To provide excellent and quality services to the full satisfaction of our client by offer-ing best professional engineering practice and sustainable solutions.</p>
@@ -113,7 +114,7 @@
 <!--          </div>-->
 <!--      </div>-->
             <div class="slideshow-item">
-          <img src={{ url_for('static', filename="images/strategy.jpg") }} alt="">
+          <img src={% static 'images/strategy.jpg' %} alt="">
           <div class="slideshow-item-text">
               <h5>Our Strategy</h5>
               <p>We  place  the  highest  value  on   teamwork  and  mutual   respect  among  our employees  and  our  clients.  Our  success  is  the  result  of  working  diligently  as  a team  to  do  each  job  right  as  well  as  maintaining  a  long-term  perspective  and integrity in the face of daily pressures while ensuring excellence and satisfaction in our product and service.</p>
@@ -150,7 +151,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Transport & Logistics</h5><br>
-                    <img src={{ url_for('static', filename="images/overseas.jpg") }} alt="" >
+                    <img src={% static 'images/overseas.jpg' %} alt="" >
                 </div>
                 <div class="details">
                     <div class="content">
@@ -162,7 +163,7 @@
             <div class="col-3">
                 <div class="cat">
                 <h5>Our Services</h5><br>
-                    <img src={{ url_for('static', filename="images/services.jpg") }} alt="">
+                    <img src={% static 'images/services.jpg' %} alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -174,7 +175,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Road, ship & air Freight</h5><br>
-                    <img src={{ url_for('static', filename="images/road.jpg") }} alt="">
+                    <img src={% static 'images/road.jpg' %} alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -186,7 +187,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Customs Clearance </h5><br>
-                    <img src={{ url_for('static', filename="images/logistics.jpg") }} alt="">
+                    <img src={% static 'images/logistics.jpg' %} alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -198,7 +199,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>General Supplies</h5><br>
-                    <img src={{ url_for('static', filename="images/warehousing.jpg") }} alt="">
+                    <img src={% static 'images/warehousing.jpg' %} alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -210,7 +211,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>General Office Suppliers</h5><br>
-                    <img src={{ url_for('static', filename="images/office.jpg") }} alt="">
+                    <img src={% static 'images/office.jpg' %} alt="">
                 </div>
                 <div class="details">
                   <p style="color: white">We offer a wide range of Office systems and chairs that are flexible, dynamic and ergonomic. <br>Stationery Sell and Supply</p>
@@ -222,7 +223,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Printing Services</h5><br>
-                    <img src={{ url_for('static', filename="images/printing.jpg") }} alt="">
+                    <img src={% static 'images/printing.jpg' %} alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -234,7 +235,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Advertising and Branding</h5><br>
-                    <img src={{ url_for('static', filename="images/advertising.jpg") }} alt="Air Freight" style="width: auto" height="40px">
+                    <img src={% static 'images/advertising.jpg' %} alt="Air Freight" style="width: auto" height="40px">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -246,7 +247,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Corporate Advertising and Branding</h5><br>
-                    <img src={{ url_for('static', filename="images/customsbrokerage.jpg") }} alt="">
+                    <img src={% static 'images/customsbrokerage.jpg' %} alt="">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -258,7 +259,7 @@
             <div class="col-3">
                 <div class="cat">
                   <h5>Supply of Agricultural Products</h5><br>
-                    <img src={{ url_for('static', filename="images/agriculture.jpg") }} alt="Air Freight">
+                    <img src={% static 'images/agriculture.jpg' %} alt="Air Freight">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -314,8 +315,8 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src={{ url_for('static', filename="vendor/jquery/jquery.min.js") }}></script>
-  <script src={{ url_for('static', filename="vendor/bootstrap/js/bootstrap.bundle.min.js") }}></script>
+  <script src={% static 'vendor/jquery/jquery.min.js' %}></script>
+  <script src={% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}></script>
 
 </body>
 </html>
