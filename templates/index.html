@@ -14,6 +14,7 @@
 
         <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
 
         <!-- Add icon library -->
@@ -92,6 +93,12 @@
         </div>
     </div>
 
+
+    <button id="back-to-top-btn"><i class="fa fa-angle-double-up"></i> <i>Top</i></button>
+
+    <script src="{% static 'js/index.js' %}">
+
+    </script>
 
     <!-- Page Content -->
     <div class="more">
@@ -200,27 +207,27 @@
                             </div>
                         </div>
                     </div>
+                    {#                    <div class="col-3">#}
+                    {#                        <div class="cat">#}
+                    {#                            <h5>Advertising and Branding</h5><br>#}
+                    {#                            <img src="{% static 'images/customsbrokerage.jpg' %}" alt="Air Freight" style="width: auto" height="40px">#}
+                    {#                        </div>#}
+                    {#                        <div class="details">#}
+                    {#                            <div class="content">#}
+                    {#                                <p>Gooa World Freighters Limited’s Marketing division has qualified staff members with experience in branding and advertising, which includes Graphic design and printing</p>#}
+                    {#                                <a href="{% url 'services' %}#advertising"><h2>Read more</h2></a>#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </div>#}
                     <div class="col-3">
                         <div class="cat">
                             <h5>Advertising and Branding</h5><br>
-                            <img src="{% static 'images/advertising.jpg' %}" alt="Air Freight" style="width: auto" height="40px">
-                        </div>
-                        <div class="details">
-                            <div class="content">
-                                <p>Gooa World Freighters Limited’s Marketing division has qualified staff members with experience in branding and advertising, which includes Graphic design and printing</p>
-                                <a href="{% url 'services' %}#advertising"><h2>Read more</h2></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="cat">
-                            <h5>Corporate Advertising and Branding</h5><br>
-                            <img src="{% static 'images/customsbrokerage.jpg' %}" alt="">
+                            <img src="{% static 'images/customsbrokerage.jpg' %}" alt="" style="width: content-box" height="100px">
                         </div>
                         <div class="details">
                             <div class="content">
                                 <p> This unit is involved in provision of expert computer-related services with efficiency. This is an express service where binding is done ‘As-u- wait’. Off-press binding of printed matter e.g. receipts books</p>
-                                <a href="{% url 'services' %}#corporate"><h2>Read more</h2></a>
+                                <a href="{% url 'services' %}#advertising"><h2>Read more</h2></a>
                             </div>
                         </div>
                     </div>
@@ -240,38 +247,43 @@
                 </div>
             </div>
         </div>
-
-        <div class="container" id="contactus" style="width: auto">
-            <h2 id="contact">Contact Us</h2>
-            <p>We are always willing to help, Please contact us to discuss your requirements and how we can be of assistance to you</p>
-
-            <!-- The social media icons -->
-            <a href="http://facebook.com/gooaworldfreighters" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://linkedin.com/company/gooa-world-freighters-limited/" class="fa fa-linkedin" target="_blank"></a>
-
-
-            <hr>
-
-            <address>
-                <strong>GOOA World Freighters Limited</strong>
-                <br>
-                <strong>P.O. BOX – 4483-00100</strong>
-                <br>Nairobi, Kenya
-                <br>
-                <!--          Div element for map-->
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="455" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1006&amp;height=455&amp;hl=en&amp;q=Olive Business Centre Kitengela&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:455px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:455px;}</style></div>
-            </address>
-            <address>
-                <p><strong>Phone:</strong> +254 723 801 544</p>
-                <br>
-                <p><strong>Email: </strong><a href="mailto:#">info@gooaworldfreighters.co.ke</a></p>
-
-            </address>
-            <span><strong>Operation hours: </strong><b>Mon - Fri: 8:00am - 5:00pm | Sat: 9:00am - 1:00pm</b></span>
-        </div>
-
-
     </div>
+
+
+    <div class="contacts">
+        <div class="container">
+            <div class="container" id="contactus" style="width: auto">
+                <h2 id="contact">Contact Us</h2>
+                <p>We are always willing to help, Please contact us to discuss your requirements and how we can be of assistance to you</p>
+
+                <!-- The social media icons -->
+                <a href="http://facebook.com/gooaworldfreighters" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://linkedin.com/company/gooa-world-freighters-limited/" class="fa fa-linkedin" target="_blank"></a>
+
+
+                <hr>
+
+                <address>
+                    <strong>GOOA World Freighters Limited</strong>
+                    <br>
+                    <strong>P.O. BOX – 4483-00100</strong>
+                    <br>Nairobi, Kenya
+                    <br>
+                    <!--          Div element for map-->
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="455" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1006&amp;height=455&amp;hl=en&amp;q=Olive Business Centre Kitengela&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:455px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:455px;}</style></div>
+                </address>
+                <address>
+                    <p><strong>Phone:</strong> +254 723 801 544</p>
+                    <br>
+                    <p><strong>Email: </strong><a href="mailto:#">info@gooaworldfreighters.co.ke</a></p>
+
+                </address>
+                <span><strong>Operation hours: </strong><b>Mon - Fri: 8:00am - 5:00pm | Sat: 9:00am - 1:00pm</b></span>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer class="py-5 bg-dark" style="height: 5px">
