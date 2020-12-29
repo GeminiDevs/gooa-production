@@ -418,9 +418,9 @@ hr {
     background: linear-gradient(to left, cornflowerblue, white);
     /*position: relative;*/
 }
-#contactus{
-    background: linear-gradient(to left, gray, white);
-}
+/*#contactus{*/
+/*    background: linear-gradient(to left, gray, white);*/
+/*}*/
 
 .contacts {
     background: linear-gradient(to left, gray, white);
@@ -431,7 +431,7 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 100px 150px;
+    /*padding: 100px 150px;*/
 }
 
 .categories{
