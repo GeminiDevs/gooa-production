@@ -1,3 +1,4 @@
+
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
@@ -24,7 +25,7 @@ function scrollFunction() {
 backToTopButton.addEventListener("click", smoothScrollBackToTop);
 
 function backToTop() {
-  window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 }
 
 function smoothScrollBackToTop() {
@@ -49,4 +50,4 @@ function easeInOutCubic(t, b, c, d) {
     if (t < 1) return c/2*t*t*t + b;
     t -= 2;
     return c/2*(t*t*t + 2) + b;
-};
+}
